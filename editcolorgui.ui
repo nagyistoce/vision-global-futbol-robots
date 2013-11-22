@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditColorGUI</class>
+ <widget class="QWidget" name="EditColorGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>611</width>
+    <height>697</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Edición de Colores</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>591</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string notr="true">Ajustes de Colores</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>110</y>
+         <width>311</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>Rangos HSV</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="verticalLayoutWidget_7">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>150</y>
+             <width>261</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QGroupBox" name="groupBox_6">
+              <property name="title">
+               <string>Valores mínimos</string>
+              </property>
+              <widget class="QSpinBox" name="spinBoxVmin">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>60</y>
+                 <width>55</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="spinBoxHmin">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>60</y>
+                 <width>55</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="spinBoxSmin">
+               <property name="geometry">
+                <rect>
+                 <x>100</x>
+                 <y>60</y>
+                 <width>55</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_2">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>H</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_5">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>S</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>210</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="verticalLayoutWidget_5">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>30</y>
+             <width>261</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="title">
+               <string>Valores máximos</string>
+              </property>
+              <widget class="QSpinBox" name="spinBoxVmax">
+               <property name="geometry">
+                <rect>
+                 <x>190</x>
+                 <y>60</y>
+                 <width>55</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="spinBoxHmax">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>60</y>
+                 <width>55</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="spinBoxSmax">
+               <property name="geometry">
+                <rect>
+                 <x>100</x>
+                 <y>60</y>
+                 <width>55</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="maximum">
+                <number>255</number>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>H</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_3">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>S</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_4">
+               <property name="geometry">
+                <rect>
+                 <x>210</x>
+                 <y>40</y>
+                 <width>21</width>
+                 <height>17</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>V</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>221</width>
+         <height>371</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Lista de Colores</string>
+          </property>
+          <widget class="QListWidget" name="listWidgetColors">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>201</width>
+             <height>331</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>410</y>
+         <width>581</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+       <property name="centerButtons">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>331</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Opciones</string>
+          </property>
+          <widget class="QCheckBox" name="checkBoxMostrar">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>30</y>
+             <width>94</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Mostrar</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBoxHabilitar">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>30</y>
+             <width>94</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Habilitar</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBoxBackground">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>30</y>
+             <width>111</width>
+             <height>22</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Background</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_8">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>510</y>
+     <width>401</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="title">
+       <string>Salida</string>
+      </property>
+      <widget class="QListView" name="listViewSalida">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>271</width>
+         <height>121</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonLimpiar">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>120</y>
+         <width>93</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Limpiar</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Descargas/moodalis_tango/pix/t/t.qrc"/>
+ </resources>
+ <connections/>
+</ui>
